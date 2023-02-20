@@ -1,0 +1,25 @@
+{
+  "name": "id.my.tauhidslab.html2pdf",
+  "version": "0.1.0",
+  "description": "cordova plugin to convert html string or file to pdf file in android app",
+  "cordova": {
+    "id": "id.my.tauhidslab.html2pdf",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tauhidcp/cordova-plugin-html2pdf-android.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Ahmad Tauhid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tauhidcp/cordova-plugin-html2pdf-android/issues"
+  },
+  "homepage": "https://github.com/tauhidcp/cordova-plugin-html2pdf-android#readme"
+}

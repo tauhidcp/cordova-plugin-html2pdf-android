@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="id.my.tauhidslab.html2pdf" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>cordova-plugin-html2pdf-android</name>
+	<js-module name="HTML2PDF" src="www/HTML2PDF.js">
+		<clobbers target="cordova.plugins.HTML2PDF" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="HTML2PDF">
+				<param name="android-package" value="id.my.tauhidslab.html2pdf.HTML2PDF" />
+			</feature>
+		</config-file>
+		<lib-file src="src/android/libs/html2pdf-4.0.5.jar"/>
+		<lib-file src="src/android/libs/commons-7.2.5.jar"/>
+		<lib-file src="src/android/libs/io-7.2.5.jar"/>
+		<lib-file src="src/android/libs/kernel-7.2.5.jar"/>
+		<lib-file src="src/android/libs/layout-7.2.5.jar"/>
+		<lib-file src="src/android/libs/slf4j-api-1.7.36.jar"/>
+		<lib-file src="src/android/libs/slf4j-simple-1.6.2.jar"/>
+		<lib-file src="src/android/libs/styled-xml-parser-7.2.5.jar"/>
+		<lib-file src="src/android/libs/svg-7.2.5.jar"/>
+		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+			<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+		</config-file>
+		<source-file src="src/android/HTML2PDF.java" target-dir="src/id/my/tauhidslab/html2pdf" />
+	</platform>
+</plugin>
